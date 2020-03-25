@@ -18,7 +18,7 @@ public class HelloServlet extends HttpServlet {
 
       PrintWriter out = res.getWriter();
 
-      out.println("<h1>Hello World!</h1>");
+      out.println("<h1>Hello World, this was automatically built through our pipeline!</h1>");
 
       String configParam = getServletConfig().getInitParameter("ConfigParam");
       System.out.println(configParam);
